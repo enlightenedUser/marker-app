@@ -2,7 +2,8 @@
 
 import React, {useCallback, useEffect, useState} from 'react';
 import styles from './SavedPage.module.scss';
-import Chart from "react-apexcharts";
+import dynamic from "next/dynamic";
+const Chart = dynamic(() => import('react-apexcharts'), {ssr: false});
 
 const SavedPage = () => {
     const [currentChart, setCurrentChart] = useState(null);

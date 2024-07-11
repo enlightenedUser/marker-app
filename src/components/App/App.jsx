@@ -1,9 +1,10 @@
 "use client"
 
 import React, {useCallback, useRef, useState} from 'react';
-import Chart from "react-apexcharts";
+const Chart = dynamic(() => import('react-apexcharts'), {ssr: false});
 import { uid } from 'uid';
 import styles from './App.module.scss';
+import dynamic from "next/dynamic";
 
 const App = () => {
     const maxDistanceRef = useRef(null);

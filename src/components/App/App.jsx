@@ -102,10 +102,10 @@ const App = () => {
 
     return (
         <div>
-            <div style={{marginTop: '30px'}}>
+            <div className={styles.first} style={{marginTop: '30px'}}>
                 Максимальная дистанция: <input type='number' ref={maxDistanceRef} placeholder='Максимум 150'/>
             </div>
-            <div>
+            <div className={styles.first}>
                 Шаг: <input type='number' ref={stepRef} placeholder='по умолчанию = 5'/>
             </div>
             <div style={{display: 'flex', gap: '10px', margin: '20px'}}>

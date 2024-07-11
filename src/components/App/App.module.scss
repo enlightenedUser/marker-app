@@ -1,4 +1,11 @@
-.chart{
+.chart {
   border: 1px solid #FFF;
   padding: 5px;
+}
+
+.first{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0;
 }
